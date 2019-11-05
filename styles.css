@@ -1,7 +1,8 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -19,6 +20,14 @@ body {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+
+/* add a toggle to this class between submitting reps, and changing back */
+/* #animate {
+    animation-name: breathe;
+    animation-delay: 3s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} */
 
 @keyframes breathe {
     0% {
