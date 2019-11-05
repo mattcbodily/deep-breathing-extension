@@ -10,6 +10,9 @@ body {
     width: 200px;
     background-color: #00C7F3;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation-name: breathe;
     /* animation-delay: 3s; */
     animation-duration: 10s;
