@@ -7,18 +7,27 @@
     <title>Deep Breathing Extension</title>
     <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
-<body onload='handleTick()'>
-    <section>
+<body>
+    <!-- <section>
         <label>Enter Reps</label>
         <br>
         <input type='number'/>
         <br>
         <button>Start</button>
-    </section>
+    </section> -->
     <div id='animation-container'>
-        <p id='repetition-count'></p>
-        <p id='instruction'></p>
-        <p id='breathe-counter'></p>
+        <section id='reps-input-container'>
+            <label>Enter Reps</label>
+            <br>
+            <input type='number'/>
+            <br>
+            <button onclick='handleTick()'>Start</button>
+        </section>
+        <section id='counter-container'>
+            <p id='repetition-count'></p>
+            <p id='instruction'></p>
+            <p id='breathe-counter'></p>
+        </section>
     </div>
     <script src='index.js'></script>
 </body>

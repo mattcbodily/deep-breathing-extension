@@ -15,10 +15,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation-name: breathe;
+    /* animation-name: breathe;
     animation-delay: 3s;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+}
+
+#counter-container {
+    display: none;
 }
 
 /* add a toggle to this class between submitting reps, and changing back */

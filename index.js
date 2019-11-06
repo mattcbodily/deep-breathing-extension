@@ -1,8 +1,12 @@
-let repetitions = 3;
+let repetitions = 0;
 let instruction = 'Get Ready';
 let count = 3;
 
+const inputContainer = document.getElementById('reps-input-container');
+const counterContainer = document.getElementById('counter-container');
+
 const repetitionCount = document.getElementById('repetition-count');
+const repInput = document.querySelector('input');
 
 const instructionText = document.getElementById('instruction');
 instructionText.innerText = instruction;
@@ -10,7 +14,7 @@ instructionText.innerText = instruction;
 const counter = document.getElementById('breathe-counter');
 counter.innerText = count;
 
-function handleCount(){
+function handleCount(interval){
     count--
     if(instruction === 'Get Ready' && count === 0){
         count = 7;
@@ -28,11 +32,21 @@ function handleCount(){
         instructionText.innerText = instruction;
     }
     if(repetitions === 0){
-        alert('All Done')
+        counterContainer.style = 'display: none;'
+        inputContainer.style = 'display: initial;'
+        repInput.value = '';
+        clearInterval(interval)
     }
     counter.innerText = count;
 }
 
+
 function handleTick(){
-    setInterval(() => handleCount(), 1000)
+    repetitions = +repInput.value;
+    repetitionCount.innerText = repetitions;
+    inputContainer.style = 'display: none;'
+    counterContainer.style = 'display: initial;'
+
+    let interval;
+    interval = setInterval(() => handleCount(interval), 1000)
 }
