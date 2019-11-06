@@ -6,7 +6,29 @@ body {
     align-items: center;
 }
 
-#animation-container {
+label, p {
+    font-size: 20px;
+}
+
+input{
+    height: 25px;
+    width: 180px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    height: 25px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0079FF;
+    color: white;
+}
+
+#information-container {
     height: 200px;
     width: 200px;
     background-color: #949DA7;
