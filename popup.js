@@ -47,3 +47,7 @@ function handleTick(){
     let interval;
     interval = setInterval(() => handleCount(interval), 1000)
 }
+
+document.getElementById('submit-button').addEventListener('click', function(){
+    handleTick()
+})
