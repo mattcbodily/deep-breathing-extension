@@ -1,5 +1,6 @@
 body {
-    height: 100vh;
+    height: 275px;
+    width: 425px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

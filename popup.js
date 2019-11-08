@@ -9,10 +9,8 @@ const repetitionCount = document.getElementById('repetition-count');
 const selectInput = document.querySelector('select');
 
 const instructionText = document.getElementById('instruction');
-instructionText.innerText = instruction;
 
 const counter = document.getElementById('breathe-counter');
-counter.innerText = count;
 
 function handleCount(interval){
     count--
@@ -43,6 +41,8 @@ function handleTick(){
     repetitions = +selectInput.value;
     inputContainer.style = 'display: none;'
     counterContainer.style = 'display: initial;'
+    instructionText.innerText = instruction;
+    counter.innerText = count;
 
     let interval;
     interval = setInterval(() => handleCount(interval), 1000)
