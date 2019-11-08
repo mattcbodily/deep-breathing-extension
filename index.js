@@ -24,7 +24,6 @@ function handleCount(interval){
         repetitions = repetitions - 1;
         instruction = 'Breathe In';
         count = 7;
-        repetitionCount.innerText = repetitions;
         instructionText.innerText = instruction;
     } else if(instruction === 'Breathe In' && count === 0){
         count = 3;
@@ -34,7 +33,6 @@ function handleCount(interval){
     if(repetitions === 0){
         counterContainer.style = 'display: none;'
         inputContainer.style = 'display: initial;'
-        repInput.value = '';
         clearInterval(interval)
     }
     counter.innerText = count;
@@ -43,7 +41,6 @@ function handleCount(interval){
 
 function handleTick(){
     repetitions = +selectInput.value;
-    repetitionCount.innerText = repetitions;
     inputContainer.style = 'display: none;'
     counterContainer.style = 'display: initial;'
 
