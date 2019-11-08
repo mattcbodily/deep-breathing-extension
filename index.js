@@ -6,7 +6,7 @@ const inputContainer = document.getElementById('reps-input-container');
 const counterContainer = document.getElementById('counter-container');
 
 const repetitionCount = document.getElementById('repetition-count');
-const repInput = document.querySelector('input');
+const selectInput = document.querySelector('select');
 
 const instructionText = document.getElementById('instruction');
 instructionText.innerText = instruction;
@@ -42,7 +42,7 @@ function handleCount(interval){
 
 
 function handleTick(){
-    repetitions = +repInput.value;
+    repetitions = +selectInput.value;
     repetitionCount.innerText = repetitions;
     inputContainer.style = 'display: none;'
     counterContainer.style = 'display: initial;'
