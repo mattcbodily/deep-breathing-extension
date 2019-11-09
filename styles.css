@@ -1,17 +1,17 @@
 body {
     height: 250px;
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url('./images/starry-sky-2.svg');
+    background-image: url('./images/moon-background.svg');
     background-size: cover;
     background-position-x: center;
 }
 
-label, p {
+h3, label, p {
     font-size: 20px;
+}
+
+label {
+    margin-top: 10px;
 }
 
 select {
@@ -21,25 +21,31 @@ select {
 }
 
 button {
-    height: 25px;
-    width: 180px;
-    border-radius: 5px;
-    margin-top: 5px;
+    height: 28px;
+    width: 160px;
+    border-radius: 15px;
+    margin-top: 25px;
     border: none;
-    background-color: #0079FF;
+    background-color: transparent;
+    border: 2px solid white;
     color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
 }
 
 #information-container {
-    height: 100px;
+    height: 180px;
     width: 200px;
-    background-color: #949DA7;
-    border-radius: 5px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 40px;
+    right: 40px;
 }
 
 #counter-container {
