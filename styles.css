@@ -48,6 +48,18 @@ button:hover {
     right: 40px;
 }
 
+#information-modal {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#information-modal:hover {
+    background-color: white;
+    color: black;
+}
+
 #counter-container {
     display: none;
 }
