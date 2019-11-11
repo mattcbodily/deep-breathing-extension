@@ -2,6 +2,9 @@ let repetitions = 0;
 let instruction = 'Get Ready';
 let count = 3;
 
+//Add different types of deep breathing,
+//And adjust the if statement to address it
+
 const inputContainer = document.getElementById('reps-input-container');
 const counterContainer = document.getElementById('counter-container');
 
