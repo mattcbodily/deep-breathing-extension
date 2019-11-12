@@ -2,8 +2,7 @@ let repetitions = 0;
 let instruction = 'Get Ready';
 let count = 3;
 
-//Add different types of deep breathing,
-//And adjust the if statement to address it
+//focus on 7/11 breathing as the technique
 
 const inputContainer = document.getElementById('reps-input-container');
 const counterContainer = document.getElementById('counter-container');
@@ -27,7 +26,7 @@ function handleCount(interval){
         count = 7;
         instructionText.innerText = instruction;
     } else if(instruction === 'Breathe In' && count === 0){
-        count = 3;
+        count = 11;
         instruction = 'Breathe Out';
         instructionText.innerText = instruction;
     }
@@ -60,4 +59,8 @@ const infoModal = document.querySelector('.information-modal');
 
 infoModalBtn.addEventListener('click', function(){
     infoModal.classList.toggle('active')
+})
+
+document.getElementById('exit-modal').addEventListener('click', function(){
+    infoModal.classList.toggle('active');
 })
