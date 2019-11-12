@@ -60,8 +60,12 @@ button:hover {
     color: black;
 }
 
-#information-modal {
+.information-modal {
     display: none;
+}
+
+.active {
+    display: initial;
 }
 
 #counter-container {

@@ -54,3 +54,10 @@ function handleTick(){
 document.getElementById('submit-button').addEventListener('click', function(){
     handleTick()
 })
+
+const infoModalBtn = document.getElementById('information-modal-button');
+const infoModal = document.querySelector('.information-modal');
+
+infoModalBtn.addEventListener('click', function(){
+    infoModal.classList.toggle('active')
+})
