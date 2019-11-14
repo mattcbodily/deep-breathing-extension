@@ -1,7 +1,7 @@
 body {
     height: 250px;
     width: 500px;
-    background-image: url('./images/moon-background.svg');
+    background-image: url('./images/night-sky-background.svg');
     background-size: cover;
     background-position-x: center;
 }
