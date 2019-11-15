@@ -3,17 +3,12 @@
 body {
     height: 250px;
     width: 500px;
-    margin: 0px;
     background-image: url('./images/night-sky-background.svg');
     background-size: cover;
     background-position-x: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-}
-
-h3, p {
     font-size: 20px;
-    margin: 0px;
 }
 
 button {
@@ -65,16 +60,18 @@ button:hover {
     opacity: .9;
 }
 
+#exit-modal {
+    height: 25px;
+    width: 25px;
+    border: none;
+}
+
 .active {
     display: initial;
 }
 
 #counter-container {
     display: none;
-}
-
-#instruction {
-    font-size: 20px;
 }
 
 #breathe-counter {
