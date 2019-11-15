@@ -76,6 +76,8 @@ document.getElementById('four-seven-eight-button').addEventListener('click', fun
 })
 
 document.getElementById('all-done-button').addEventListener('click', function(){
+    instruction = 'Get Ready';
+    count = 3;
     counterContainer.style = 'display: none;'
     inputContainer.style = 'display: initial;'
     clearInterval(interval)
