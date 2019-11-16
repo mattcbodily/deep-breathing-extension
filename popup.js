@@ -3,11 +3,8 @@ let count = 3;
 
 const inputContainer = document.getElementById('reps-input-container');
 const counterContainer = document.getElementById('counter-container');
-
 const selectInput = document.querySelector('select');
-
 const instructionText = document.getElementById('instruction');
-
 const counter = document.getElementById('breathe-counter');
 
 function sevenEleven(){
@@ -25,17 +22,11 @@ function sevenEleven(){
         instruction = 'Breathe Out';
         instructionText.innerText = instruction;
     }
-    // if(repetitions === 0){
-    //     counterContainer.style = 'display: none;'
-    //     inputContainer.style = 'display: initial;'
-    //     clearInterval(interval)
-    // }
     counter.innerText = count;
 }
 
 function fourSevenEight(){
     count--
-    console.log(count)
     if(instruction === 'Get Ready' && count === 0){
         count = 4;
         instruction = 'Breathe In';
