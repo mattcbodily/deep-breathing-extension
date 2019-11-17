@@ -7,6 +7,9 @@ const selectInput = document.querySelector('select');
 const instructionText = document.getElementById('instruction');
 const counter = document.getElementById('breathe-counter');
 
+// double check code for redundancy. Add comments throughout.
+// make sure code is readable.
+
 function sevenEleven(){
     count--
     if(instruction === 'Get Ready' && count === 0){
