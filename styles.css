@@ -13,13 +13,14 @@ body {
 
 button {
     height: 28px;
-    width: 160px;
+    width: 125px;
     border-radius: 15px;
     border: none;
     background-color: transparent;
     border: 2px solid white;
     color: white;
     font-size: 20px;
+    margin-top: 15px;
 }
 
 button:hover {
