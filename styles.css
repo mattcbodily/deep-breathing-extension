@@ -3,6 +3,8 @@
 body {
     height: 200px;
     width: 250px;
+    box-sizing: border-box;
+    padding-top: 15px;
     background-image: url('./images/night-sky-background.svg');
     background-size: cover;
     background-position-x: center;
@@ -15,12 +17,12 @@ button {
     height: 28px;
     width: 125px;
     border-radius: 15px;
+    margin-top: 15px;
     border: none;
     background-color: transparent;
     border: 2px solid white;
     color: white;
     font-size: 20px;
-    margin-top: 15px;
 }
 
 button:hover {
@@ -41,7 +43,7 @@ button:hover {
     font-size: 15px;
     font-weight: 500;
     position: fixed;
-    top: 5px;
+    top: -5px;
     right: 5px;
 }
 
